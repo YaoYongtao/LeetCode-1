@@ -39,6 +39,6 @@ class Solution:
         
 
 if __name__ == "__main__":
-    print Solution().search([3, 5, 1], 3)
-    print Solution().search([2, 2, 3, 3, 4, 1], 1)
-    print Solution().search([4, 4, 5, 6, 7, 0, 1, 2], 5)
+    print(Solution().search([3, 5, 1], 3))
+    print(Solution().search([2, 2, 3, 3, 4, 1], 1))
+    print(Solution().search([4, 4, 5, 6, 7, 0, 1, 2], 5))

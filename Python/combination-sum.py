@@ -35,4 +35,4 @@ class Solution:
 if __name__ == "__main__":
     candidates, target = [2, 3, 6, 7], 7
     result = Solution().combinationSum(candidates, target)     
-    print result       
+    print(result       )

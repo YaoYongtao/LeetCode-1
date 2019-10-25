@@ -24,5 +24,5 @@ class Solution:
             return x * self.powRecu(x * x, n / 2)
 
 if __name__ == "__main__":
-    print Solution().pow(3, 5)
-    print Solution().pow(3, -5)
+    print(Solution().pow(3, 5))
+    print(Solution().pow(3, -5))

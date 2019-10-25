@@ -27,8 +27,8 @@ class Solution:
         max_val, min_val = max(unique_num), min(unique_num)
         gap = (max_val - min_val) / (len(unique_num) - 1)
         bucket_size = (max_val - min_val) / gap + 1
-        max_bucket = [float("-inf") for _ in xrange(bucket_size)]
-        min_bucket = [float("inf") for _ in xrange(bucket_size)]
+        max_bucket = [float("-inf") for _ in range(bucket_size)]
+        min_bucket = [float("inf") for _ in range(bucket_size)]
 
         for i in unique_num:
             if i in (max_val, min_val):
@@ -39,7 +39,7 @@ class Solution:
         
         max_gap = 0
         pre = min_val
-        for i in xrange(bucket_size):
+        for i in range(bucket_size):
             if max_bucket[i] == float("-inf") and min_bucket[i] == float("inf"):
                 continue
             max_gap = max(max_gap, min_bucket[i] - pre)
@@ -76,4 +76,4 @@ class Solution2:
         return max_gap
      
 if __name__ == "__main__":
-    print Solution().maximumGap([3, 1, 1, 1, 5, 5, 5, 5])
+    print(Solution().maximumGap([3, 1, 1, 1, 5, 5, 5, 5]))

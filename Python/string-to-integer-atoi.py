@@ -60,9 +60,9 @@ class Solution:
         return sign * result
 
 if __name__ == "__main__":
-    print Solution().atoi("") 
-    print Solution().atoi("-1")
-    print Solution().atoi("2147483647") 
-    print Solution().atoi("2147483648") 
-    print Solution().atoi("-2147483648")  
-    print Solution().atoi("-2147483649")  
+    print(Solution().atoi("") )
+    print(Solution().atoi("-1"))
+    print(Solution().atoi("2147483647") )
+    print(Solution().atoi("2147483648") )
+    print(Solution().atoi("-2147483648")  )
+    print(Solution().atoi("-2147483649")  )

@@ -13,7 +13,7 @@ class Solution:
     def majorityElement(self, num):
         idx, cnt = 0, 1
         
-        for i in xrange(1, len(num)):
+        for i in range(1, len(num)):
             if num[idx] == num[i]:
                 cnt += 1
             else:
@@ -25,4 +25,4 @@ class Solution:
         return num[idx]
 
 if __name__ == "__main__":
-    print Solution().majorityElement([1, 2, 3, 4, 5, 5, 5, 5, 5, 5, 6])
+    print(Solution().majorityElement([1, 2, 3, 4, 5, 5, 5, 5, 5, 5, 6]))

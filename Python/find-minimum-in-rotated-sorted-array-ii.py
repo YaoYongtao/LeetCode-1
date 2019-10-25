@@ -55,5 +55,5 @@ class Solution2:
         return num[low]
 
 if __name__ == "__main__":
-    print Solution().findMin([3, 1, 1, 2, 2, 3])
-    print Solution2().findMin([2, 2, 2, 3, 3, 1])
+    print(Solution().findMin([3, 1, 1, 2, 2, 3]))
+    print(Solution2().findMin([2, 2, 2, 3, 3, 1]))

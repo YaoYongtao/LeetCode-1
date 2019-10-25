@@ -77,4 +77,4 @@ if __name__ == "__main__":
     root.right = TreeNode(2)
     root.right.left = TreeNode(3)
     result = Solution().inorderTraversal(root)
-    print result
+    print(result)

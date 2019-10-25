@@ -12,9 +12,9 @@ class Solution:
     # @return a string
     def multiply(self, num1, num2):
         num1, num2 = num1[::-1], num2[::-1]
-        result = [0 for i in xrange(len(num1) + len(num2))]
-        for i in xrange(len(num1)):
-            for j in xrange(len(num2)):
+        result = [0 for i in range(len(num1) + len(num2))]
+        for i in range(len(num1)):
+            for j in range(len(num2)):
                 result[i + j] += int(num1[i]) * int(num2[j])
                 
         carry, num3 = 0, []
@@ -29,4 +29,4 @@ class Solution:
         return ''.join(num3)
 
 if __name__ == "__main__":
-    print Solution().multiply("123", "1000")
+    print(Solution().multiply("123", "1000"))

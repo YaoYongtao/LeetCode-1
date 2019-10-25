@@ -22,7 +22,7 @@ class Solution:
             return result
         
 if __name__ == "__main__":
-    print Solution().divide(123, 12)
-    print Solution().divide(123, -12)
-    print Solution().divide(-123, 12)
-    print Solution().divide(-123, -12)
+    print(Solution().divide(123, 12))
+    print(Solution().divide(123, -12))
+    print(Solution().divide(-123, 12))
+    print(Solution().divide(-123, -12))

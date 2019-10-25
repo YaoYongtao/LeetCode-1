@@ -33,4 +33,4 @@ class Solution:
             
 if __name__ == "__main__":
     for i in ["0", "10", "10", "103", "1032", "10323"]:
-        print Solution().numDecodings(i)
+        print(Solution().numDecodings(i))

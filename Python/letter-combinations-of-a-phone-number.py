@@ -22,9 +22,9 @@ class Solution:
         for digit in digits:
             choices = lookup[int(digit)]
             m, n = len(choices), len(result)
-            result.extend([result[i % n] for i in xrange(n, m * n)])    
+            result.extend([result[i % n] for i in range(n, m * n)])    
 
-            for i in xrange(m * n):
+            for i in range(m * n):
                 result[i] += choices[i / n]
             
         return result
@@ -47,4 +47,4 @@ class Solution2:
                 self.letterCombinationsRecu(result, digits, lookup, cur + choice, n + 1)
 
 if __name__ == "__main__":
-    print Solution().letterCombinations("23")
+    print(Solution().letterCombinations("23"))

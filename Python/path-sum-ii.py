@@ -51,4 +51,4 @@ class Solution:
 if __name__ == "__main__":
     root = TreeNode(5)
 
-    print Solution().pathSum(root, 5)
+    print(Solution().pathSum(root, 5))

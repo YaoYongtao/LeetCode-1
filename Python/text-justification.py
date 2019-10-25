@@ -71,4 +71,4 @@ class Solution:
         return result
 
 if __name__ == "__main__":
-    print Solution().fullJustify(["This", "is", "an", "example", "of", "text", "justification."], 16)
+    print(Solution().fullJustify(["This", "is", "an", "example", "of", "text", "justification."], 16))

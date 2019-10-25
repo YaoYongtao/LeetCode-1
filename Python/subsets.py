@@ -31,7 +31,7 @@ class Solution:
         
         while i < count:
             cur = []
-            for j in xrange(len(S)):
+            for j in range(len(S)):
                 if i & 1 << j:
                     cur.append(S[j])
             result.append(cur)
@@ -52,4 +52,4 @@ class Solution2:
         return self.subsetsRecu(cur, S[1:]) + self.subsetsRecu(cur + [S[0]], S[1:])
         
 if __name__ == "__main__":
-    print Solution().subsets([1, 2, 3])
+    print(Solution().subsets([1, 2, 3]))

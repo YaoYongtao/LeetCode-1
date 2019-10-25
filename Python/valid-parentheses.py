@@ -20,5 +20,5 @@ class Solution:
         return len(stack) == 0
     
 if __name__ == "__main__":
-    print Solution().isValid("()[]{}")
-    print Solution().isValid("()[{]}")
+    print(Solution().isValid("()[]{}"))
+    print(Solution().isValid("()[{]}"))

@@ -47,4 +47,4 @@ if __name__ == "__main__":
     i, v = BSTIterator(root), []
     while i.hasNext(): v.append(i.next())
     
-    print v
+    print(v)

@@ -16,12 +16,12 @@ class Solution:
     # @param board, a 9x9 2D array
     # @return a boolean
     def isValidSudoku(self, board):
-        for i in xrange(9):
-            if not self.isValidList([board[i][j] for j in xrange(9)]) or not self.isValidList([board[j][i] for j in xrange(9)]):
+        for i in range(9):
+            if not self.isValidList([board[i][j] for j in range(9)]) or not self.isValidList([board[j][i] for j in range(9)]):
                 return False
-        for i in xrange(3):
-            for j in xrange(3):
-                if not self.isValidList([board[m][n] for n in xrange(3 * j, 3 * j + 3) for m in xrange(3 * i, 3 * i + 3)]):
+        for i in range(3):
+            for j in range(3):
+                if not self.isValidList([board[m][n] for n in range(3 * j, 3 * j + 3) for m in range(3 * i, 3 * i + 3)]):
                     return False
         return True
     
@@ -39,4 +39,4 @@ if __name__ == "__main__":
              ['.', '.', '.', '.', '.', '.', 7, '.', '.'],
              ['.', '.', '.', '.', '.', '.', '.', 8, '.'],
              ['.', '.', '.', '.', '.', '.', '.', '.', 9]]
-    print Solution().isValidSudoku(board)
+    print(Solution().isValidSudoku(board))

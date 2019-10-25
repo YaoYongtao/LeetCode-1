@@ -34,21 +34,21 @@ class Solution:
     def read(self, buf, n):
         read_bytes = 0
         eof = False
-        buffer = ['' for _ in xrange(4)]
+        buffer = ['' for _ in range(4)]
         while not eof and read_bytes < n:
             size = read4(buffer)
             if size < 4:
                 eof = True
             bytes = min(n - read_bytes, size)
-            for i in xrange(bytes):
+            for i in range(bytes):
                 buf[read_bytes + i] = buffer[i]
             read_bytes += bytes
         return read_bytes
 
 if __name__ == "__main__":
     global file_content
-    buf = ['' for _ in xrange(100)]
+    buf = ['' for _ in range(100)]
     file_content = "a"
-    print buf[:Solution().read(buf, 9)]    
+    print(buf[:Solution().read(buf, 9)]    )
     file_content = "abcdefghijklmnop"
-    print buf[:Solution().read(buf, 9)]
+    print(buf[:Solution().read(buf, 9)])

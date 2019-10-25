@@ -51,4 +51,4 @@ if __name__ == "__main__":
     root.right.left = TreeNode(15)
     root.right.right = TreeNode(7)
     result = Solution().levelOrder(root)
-    print result
+    print(result)

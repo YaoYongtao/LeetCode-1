@@ -32,8 +32,8 @@ if __name__ == "__main__":
     root = TreeNode(0)
     root.left = TreeNode(1)
     result = Solution().isBalanced(root)
-    print result
+    print(result)
     
     root.left.left = TreeNode(2)
     result = Solution().isBalanced(root)
-    print result
+    print(result)

@@ -13,7 +13,7 @@ class Solution:
         string = self.preProcess(s)
         palindrome = [0] * len(string) 
         center, right = 0, 0
-        for i in xrange(1, len(string) - 1):
+        for i in range(1, len(string) - 1):
             i_mirror = 2 * center - i
             if right > i:
                 palindrome[i] = min(right - i, palindrome[i_mirror])
@@ -27,7 +27,7 @@ class Solution:
                 center, right = i, i + palindrome[i]       
         
         max_len, max_center = 0, 0
-        for i in xrange(1, len(string) - 1):
+        for i in range(1, len(string) - 1):
             if palindrome[i] > max_len:
                 max_len = palindrome[i]
                 max_center = i
@@ -44,4 +44,4 @@ class Solution:
         return string
     
 if __name__ == "__main__":
-    print Solution().longestPalindrome("abb")
+    print(Solution().longestPalindrome("abb"))

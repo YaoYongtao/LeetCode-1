@@ -33,4 +33,4 @@ if __name__ == "__main__":
     A = [1, 3, 5, 0, 0, 0, 0]
     B = [2, 4, 6, 7]
     Solution().merge(A, 3, B, 4)
-    print A
+    print(A)

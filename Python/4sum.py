@@ -1,7 +1,7 @@
 # Time:  O(n^2) ~ O(n^4)
 # Space: O(n^2)
 #
-# Given an array S of n integers, 
+# Given an array S of n integers,
 # are there elements a, b, c, and d in S such that a + b + c + d = target?
 # Find all unique quadruplets in the array which gives the sum of target.
 #
@@ -20,8 +20,8 @@ class Solution:
     # @return a list of lists of length 4, [[val1,val2,val3,val4]]
     def fourSum(self, nums, target):
         nums, result, lookup = sorted(nums), [], {}
-        for i in xrange(0, len(nums) - 1):
-            for j in xrange(i + 1, len(nums)): 
+        for i in range(0, len(nums) - 1):
+            for j in range(i + 1, len(nums)):
                 if nums[i] + nums[j] not in lookup:
                     lookup[nums[i] + nums[j]] = []
                 lookup[nums[i] + nums[j]].append([i, j])
@@ -39,4 +39,4 @@ class Solution:
 
 if __name__ == '__main__':
     result = Solution().fourSum([1, 0, -1, 0, -2, 2], 0)
-    print result
+    print((result))

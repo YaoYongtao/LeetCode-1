@@ -38,4 +38,4 @@ class Solution:
         return max_points
 
 if __name__ == "__main__":
-    print Solution().maxPoints([Point(), Point(), Point()])
+    print(Solution().maxPoints([Point(), Point(), Point()]))

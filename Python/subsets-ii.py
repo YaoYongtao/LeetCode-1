@@ -29,7 +29,7 @@ class Solution:
         
         while i < count:
             cur = []
-            for j in xrange(len(S)):
+            for j in range(len(S)):
                 if i & 1 << j:
                     cur.append(S[j])
             if cur not in result:
@@ -54,4 +54,4 @@ class Solution2:
             self.subsetsWithDupRecu(result, cur + [S[0]], S[1:])
         
 if __name__ == "__main__":
-    print Solution().subsetsWithDup([1, 2, 2])
+    print(Solution().subsetsWithDup([1, 2, 2]))

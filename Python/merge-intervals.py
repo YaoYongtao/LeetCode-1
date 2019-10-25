@@ -34,4 +34,4 @@ class Solution:
         return result
 
 if __name__ == "__main__":
-    print Solution().merge([Interval(1, 3), Interval(2, 6), Interval(8, 10), Interval(15,18)])
+    print(Solution().merge([Interval(1, 3), Interval(2, 6), Interval(8, 10), Interval(15,18)]))

@@ -17,8 +17,8 @@
 class Solution:
     # @return a string
     def minWindow(self, S, T):
-        current_count = [0 for i in xrange(52)]
-        expected_count = [0 for i in xrange(52)]
+        current_count = [0 for i in range(52)]
+        expected_count = [0 for i in range(52)]
         
         for char in T:
             expected_count[ord(char) - ord('a')] += 1
@@ -46,4 +46,4 @@ class Solution:
         return S[min_start:min_start + min_width]
 
 if __name__ == "__main__":
-    print Solution().minWindow("ADOBECODEBANC", "ABC")       
+    print(Solution().minWindow("ADOBECODEBANC", "ABC")       )

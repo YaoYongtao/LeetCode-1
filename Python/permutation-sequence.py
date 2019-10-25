@@ -24,8 +24,8 @@ class Solution:
     # @return a string
     def getPermutation(self, n, k):
         seq, k, fact = "", k - 1, math.factorial(n - 1)
-        perm = [i for i in xrange(1, n + 1)]
-        for i in reversed(xrange(n)):
+        perm = [i for i in range(1, n + 1)]
+        for i in reversed(range(n)):
             curr = perm[k / fact]
             seq += str(curr)
             perm.remove(curr)
@@ -35,4 +35,4 @@ class Solution:
         return seq
     
 if __name__ == "__main__":
-    print Solution().getPermutation(3, 2)
+    print(Solution().getPermutation(3, 2))

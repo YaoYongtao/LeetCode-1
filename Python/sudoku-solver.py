@@ -13,10 +13,10 @@ class Solution:
     # Solve the Sudoku by modifying the input board in-place.
     # Do not return any value.
     def solveSudoku(self, board):
-        for i in xrange(len(board)):
-            for j in xrange(len(board[0])):
+        for i in range(len(board)):
+            for j in range(len(board[0])):
                 if(board[i][j] == '.'):
-                    for k in xrange(9):
+                    for k in range(9):
                         board[i][j] = chr(ord('1') + k)
                         if self.isValid(board, i, j) and self.solveSudoku(board):
                             return True
@@ -25,11 +25,11 @@ class Solution:
         return True
     
     def isValid(self, board, x, y):
-        for i in xrange(9):
+        for i in range(9):
             if i != x and board[i][y] == board[x][y]:
                 return False
             
-        for j in xrange(9):
+        for j in range(9):
             if j != y and board[x][j] == board[x][y]:
                 return False
             
@@ -55,4 +55,4 @@ if __name__ == "__main__":
              ['.', '6', '.', '.', '.', '.', '2', '8', '.'],
              ['.', '.', '.', '4', '1', '9', '.', '.', '5'],
              ['.', '.', '.', '.', '8', '.', '.', '7', '9']]
-    print Solution().solveSudoku(board)
+    print(Solution().solveSudoku(board))

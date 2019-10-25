@@ -30,7 +30,7 @@ def read4(buf):
 class Solution:
     def __init__(self):
         self.buffer_size, self.offset = 0, 0
-        self.buffer = [None for _ in xrange(4)]
+        self.buffer = [None for _ in range(4)]
     
     # @param buf, Destination buffer (a list of characters)
     # @param n,   Maximum number of characters to read (an integer)
@@ -46,7 +46,7 @@ class Solution:
             if self.buffer_size == 0 and size < 4:
                 eof = True   
             bytes = min(n - read_bytes, size)
-            for i in xrange(bytes):
+            for i in range(bytes):
                 buf[read_bytes + i] = self.buffer[self.offset + i]
             self.offset = (self.offset + bytes) % 4
             self.buffer_size = size - bytes
@@ -56,7 +56,7 @@ class Solution:
 if __name__ == "__main__":
     global file_content
     sol = Solution()
-    buf = ['' for _ in xrange(100)]
+    buf = ['' for _ in range(100)]
     file_content = "ab"
-    print buf[:sol.read(buf, 1)]
-    print buf[:sol.read(buf, 2)]    
+    print(buf[:sol.read(buf, 1)])
+    print(buf[:sol.read(buf, 2)]    )

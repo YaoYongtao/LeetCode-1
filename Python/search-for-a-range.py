@@ -34,5 +34,5 @@ class Solution:
         return start
 
 if __name__ == "__main__":
-    print Solution().searchRange([2, 2], 3)
-    print Solution().searchRange([5, 7, 7, 8, 8, 10], 8)
+    print(Solution().searchRange([2, 2], 3))
+    print(Solution().searchRange([5, 7, 7, 8, 8, 10], 8))

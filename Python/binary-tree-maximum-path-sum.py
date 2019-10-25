@@ -41,4 +41,4 @@ if __name__ == "__main__":
     root.left = TreeNode(2)
     root.right = TreeNode(3)
     result = Solution().maxPathSum(root)
-    print result
+    print(result)

@@ -21,5 +21,5 @@ class Solution:
 
 if __name__ == "__main__":
     result = Solution().maxProfit([3, 2, 1, 4, 2, 5, 6])
-    print result
+    print(result)
     

@@ -22,12 +22,12 @@ class Solution:
             return ""
         if nRows == 1:
             return s
-        for i in xrange(nRows):
-            for j in xrange(i, len(s), step):
+        for i in range(nRows):
+            for j in range(i, len(s), step):
                 zigzag += s[j]
                 if i > 0 and i < nRows - 1 and j + step - 2 * i < len(s):
                     zigzag += s[j + step - 2 * i]
         return zigzag
 
 if __name__ == "__main__":
-    print Solution().convert("PAYPALISHIRING", 3)
+    print(Solution().convert("PAYPALISHIRING", 3))

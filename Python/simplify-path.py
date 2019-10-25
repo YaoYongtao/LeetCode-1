@@ -28,5 +28,5 @@ class Solution:
         return "/" + "/".join(stack)
 
 if __name__ == "__main__":
-    print Solution().simplifyPath("/../")
-    print Solution().simplifyPath("/home//foo/")
+    print(Solution().simplifyPath("/../"))
+    print(Solution().simplifyPath("/home//foo/"))

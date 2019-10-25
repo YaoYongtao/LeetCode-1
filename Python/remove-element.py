@@ -21,4 +21,4 @@ class Solution:
         return last + 1
     
 if __name__ == "__main__":
-    print Solution().removeElement([1, 2, 3, 4, 5, 2, 2], 2)
+    print(Solution().removeElement([1, 2, 3, 4, 5, 2, 2], 2))

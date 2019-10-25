@@ -46,7 +46,7 @@ class Solution:
             return integer + decimal
 
 if __name__ == "__main__":
-    print Solution().fractionToDecimal(1, 9)
-    print Solution().fractionToDecimal(-50, 8)
-    print Solution().fractionToDecimal(22, 2)
-    print Solution().fractionToDecimal(-22, -2)
+    print(Solution().fractionToDecimal(1, 9))
+    print(Solution().fractionToDecimal(-50, 8))
+    print(Solution().fractionToDecimal(22, 2))
+    print(Solution().fractionToDecimal(-22, -2))

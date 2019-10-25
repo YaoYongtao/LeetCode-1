@@ -30,17 +30,17 @@ class Solution:
         if obstacleGrid[0][0] == 0:
             ways[0] = 1
             
-        for j in xrange(1, n):
+        for j in range(1, n):
             if obstacleGrid[0][j] == 1:
                 ways[j] = 0
             else:
                 ways[j] = ways[j - 1]
         
-        for i in xrange(1, m):
+        for i in range(1, m):
             if obstacleGrid[i][0] == 1:
                 ways[0] = 0
                 
-            for j in xrange(1, n):
+            for j in range(1, n):
                 if obstacleGrid[i][j] == 1:
                     ways[j] = 0
                 else:
@@ -54,4 +54,4 @@ if __name__ == "__main__":
                       [0,1,0],
                       [0,0,0]
                    ]
-    print Solution().uniquePathsWithObstacles(obstacleGrid)
+    print(Solution().uniquePathsWithObstacles(obstacleGrid))

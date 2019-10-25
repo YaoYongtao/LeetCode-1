@@ -42,6 +42,6 @@ if __name__ == "__main__":
         Sol.add(i)
     
     for i in (4, 7):
-        print Sol.find(i)
+        print(Sol.find(i))
                 
                 

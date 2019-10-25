@@ -33,5 +33,5 @@ class Solution:
             return -self.reverse(-x)
         
 if __name__ == "__main__":
-    print Solution().reverse(123)
-    print Solution().reverse(-321)
+    print(Solution().reverse(123))
+    print(Solution().reverse(-321))

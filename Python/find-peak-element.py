@@ -35,5 +35,5 @@ class Solution:
         return low
 
 if __name__ == "__main__":
-   # print Solution().findPeakElement([1,2,1])
-    print Solution().findPeakElement([1,2,3, 1])
+   # print(Solution().findPeakElement([1,2,1]))
+    print(Solution().findPeakElement([1,2,3, 1]))

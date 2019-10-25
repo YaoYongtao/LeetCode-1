@@ -27,11 +27,11 @@ class Solution:
             return
         current = []
         
-        for i in xrange(len(board)):
+        for i in range(len(board)):
             current.append((i, 0))
             current.append((i, len(board[0]) - 1))
             
-        for i in xrange(len(board[0])):
+        for i in range(len(board[0])):
             current.append((0, i))
             current.append((len(board) - 1, i))
             
@@ -44,7 +44,7 @@ class Solution:
                         board[x][y] = 'V'
                         current.append((x, y))
                         
-        for i in xrange(len(board)):
+        for i in range(len(board)):
             for j in range(len(board[0])):
                 if board[i][j] != 'V':
                     board[i][j] = 'X'
@@ -57,4 +57,4 @@ if __name__ == "__main__":
              ['X', 'X', 'O', 'X'],
              ['X', 'O', 'X', 'X']]
     Solution().solve(board)
-    print board
+    print(board)

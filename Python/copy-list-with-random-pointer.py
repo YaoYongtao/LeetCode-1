@@ -71,6 +71,6 @@ if __name__ == "__main__":
     head.next = RandomListNode(2)
     head.random = head.next
     result = Solution().copyRandomList(head)
-    print result.label
-    print result.next.label
-    print result.random.label
+    print(result.label)
+    print(result.next.label)
+    print(result.random.label)

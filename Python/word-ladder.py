@@ -35,7 +35,7 @@ class Solution:
             for word in cur:
                 if word == end:
                     return distance + 1
-                for i in xrange(len(word)):
+                for i in range(len(word)):
                     for j in 'abcdefghijklmnopqrstuvwxyz':
                         candidate = word[:i] + j + word[i + 1:]
                         if candidate not in visited and candidate in dict:
@@ -47,4 +47,4 @@ class Solution:
         return 0
     
 if __name__ == "__main__":
-    print Solution().ladderLength("hit", "cog", set(["hot","dot","dog","lot","log"]))
+    print(Solution().ladderLength("hit", "cog", set(["hot","dot","dog","lot","log"])))

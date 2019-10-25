@@ -70,7 +70,7 @@ if __name__ == "__main__":
     root, root.left, root.right = TreeNode(1), TreeNode(2), TreeNode(3)
     root.left.left, root.left.right, root.right.right = TreeNode(4), TreeNode(5), TreeNode(7)
     Solution().connect(root)
-    print root
-    print root.left
-    print root.left.left
+    print(root)
+    print(root.left)
+    print(root.left.left)
     

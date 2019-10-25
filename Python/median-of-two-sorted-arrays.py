@@ -67,6 +67,6 @@ class Solution2:
             return A[pa - 1]
     
 if __name__ == "__main__":
-    print Solution().findMedianSortedArrays([1, 3, 5, 7], [2, 4, 6])
-    print Solution().findMedianSortedArrays([1, 3, 5], [2, 4, 6])
+    print(Solution().findMedianSortedArrays([1, 3, 5, 7], [2, 4, 6]))
+    print(Solution().findMedianSortedArrays([1, 3, 5], [2, 4, 6]))
     

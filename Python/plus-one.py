@@ -11,7 +11,7 @@ class Solution:
     # @return a list of integer digits
     def plusOne(self, digits):
         carry = 1
-        for i in reversed(xrange(len(digits))):
+        for i in reversed(range(len(digits))):
             digits[i] += carry
             carry = digits[i] / 10
             digits[i] %= 10
@@ -22,4 +22,4 @@ class Solution:
         return digits
 
 if __name__ == "__main__":
-    print Solution().plusOne([9, 9, 9, 9])
+    print(Solution().plusOne([9, 9, 9, 9]))

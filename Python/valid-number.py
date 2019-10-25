@@ -66,8 +66,8 @@ class Solution2:
         return bool(re.match("^\s*[\+\-]?((\d+(\.\d*)?)|\.\d+)([eE][+-]?\d+)?\s*$", s))
     
 if __name__ == "__main__":
-    print Solution().isNumber(" 0.1 ")
-    print Solution().isNumber("abc")
-    print Solution().isNumber("1 a")
-    print Solution().isNumber("2e10")
+    print(Solution().isNumber(" 0.1 "))
+    print(Solution().isNumber("abc"))
+    print(Solution().isNumber("1 a"))
+    print(Solution().isNumber("2e10"))
         

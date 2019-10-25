@@ -26,5 +26,5 @@ class Solution:
         return result[::-1]
         
 if __name__ == "__main__":
-    for i in xrange(1, 29):
-        print Solution().convertToTitle(i)
+    for i in range(1, 29):
+        print(Solution().convertToTitle(i))

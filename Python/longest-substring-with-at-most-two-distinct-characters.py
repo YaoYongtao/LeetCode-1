@@ -13,7 +13,7 @@ class Solution:
     # @param s, a string
     # @return an integer
     def lengthOfLongestSubstringTwoDistinct(self, s):
-        longest, start, distinct_count, visited = 0, 0, 0, [0 for _ in xrange(256)]
+        longest, start, distinct_count, visited = 0, 0, 0, [0 for _ in range(256)]
         for i, char in enumerate(s):
             if visited[ord(char)] == 0:
                 distinct_count += 1
@@ -29,4 +29,4 @@ class Solution:
         return longest
     
 if __name__ == "__main__":
-    print Solution().lengthOfLongestSubstringTwoDistinct("eceba")
+    print(Solution().lengthOfLongestSubstringTwoDistinct("eceba"))

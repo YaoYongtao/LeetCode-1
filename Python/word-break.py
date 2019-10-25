@@ -17,11 +17,11 @@ class Solution:
     # @return a boolean
     def wordBreak(self, s, dict):
         n = len(s)
-        possible = [False for _ in xrange(n)]
-        for i in xrange(n):
+        possible = [False for _ in range(n)]
+        for i in range(n):
             if s[:i+1] in dict:
                 possible[i] = True
-            for j in xrange(i):
+            for j in range(i):
                 if possible[j] and s[j+1:i+1] in dict:
                     possible[i] = True
                     break
@@ -29,4 +29,4 @@ class Solution:
         return possible[n-1]
     
 if __name__ == "__main__":
-    print Solution().wordBreak("leetcode", ["leet", "code"])
+    print(Solution().wordBreak("leetcode", ["leet", "code"]))

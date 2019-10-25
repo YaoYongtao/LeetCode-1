@@ -24,4 +24,4 @@ class Solution:
         
 if __name__ == "__main__":
     result = Solution().anagrams(["cat", "dog", "act", "mac"])
-    print result
+    print(result)

@@ -48,8 +48,8 @@ class Solution2:
         return num[low]
 
 if __name__ == "__main__":
-    print Solution().findMin([1])
-    print Solution().findMin([1, 2])
-    print Solution().findMin([2, 1])
-    print Solution().findMin([3, 1, 2])
-    print Solution().findMin([2, 3, 1])
+    print(Solution().findMin([1]))
+    print(Solution().findMin([1, 2]))
+    print(Solution().findMin([2, 1]))
+    print(Solution().findMin([3, 1, 2]))
+    print(Solution().findMin([2, 3, 1]))

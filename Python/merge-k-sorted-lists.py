@@ -41,4 +41,4 @@ if __name__ == "__main__":
     list2 = ListNode(2)
     list2.next = ListNode(4)
     
-    print Solution().mergeKLists([list1, list2])
+    print(Solution().mergeKLists([list1, list2]))

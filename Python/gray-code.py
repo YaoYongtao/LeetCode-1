@@ -4,7 +4,7 @@
 # The gray code is a binary numeral system where two successive values differ in only one bit.
 # 
 # Given a non-negative integer n representing the total number of bits in the code, 
-# print the sequence of gray code. A gray code sequence must begin with 0.
+# print(the sequence of gray code. A gray code sequence must begin with 0.)
 # 
 # For example, given n = 2, return [0,1,3,2]. Its gray code sequence is:
 # 
@@ -23,7 +23,7 @@ class Solution:
     # @return a list of integers
     def grayCode(self, n):
         result = [0]
-        for i in xrange(0, n):
+        for i in range(0, n):
             for n in reversed(result):
                 result.append(1 << i | n)
         return result
@@ -33,8 +33,8 @@ class Solution:
 class Solution2:
     # @return a list of integers
     def grayCode(self, n):
-        return [i >> 1 ^ i for i in xrange(1 << n)]
+        return [i >> 1 ^ i for i in range(1 << n)]
 
 if __name__ == "__main__":
-    print Solution().grayCode(0)
-    print Solution().grayCode(2)
+    print(Solution().grayCode(0))
+    print(Solution().grayCode(2))
