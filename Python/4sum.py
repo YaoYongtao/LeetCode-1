@@ -39,4 +39,4 @@ class Solution:
 
 if __name__ == '__main__':
     result = Solution().fourSum([1, 0, -1, 0, -2, 2], 0)
-    print((result))
+    print(result)
